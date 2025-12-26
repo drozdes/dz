@@ -1,70 +1,16 @@
-using System;
-
-namespace MathProblems
-{
-    class Program
-    {
-        static void Main(string[] args)
+  static void Task_2_1()
         {
-            Console.WriteLine("ПРОГРАММА ДЛЯ РЕШЕНИЯ ЗАДАЧ 2.1 - 2.17");
-            Console.WriteLine("======================================");
+            Console.WriteLine("\n=== Задание 2.1 ===");
             
-            while (true)
-            {
-                Console.WriteLine("\nВыберите задачу для выполнения (2.1 - 2.17)");
-                Console.WriteLine("или введите 'all' для выполнения всех задач");
-                Console.WriteLine("или 'exit' для выхода");
-                
-                string choice = Console.ReadLine().Trim().ToLower();
-                
-                if (choice == "exit")
-                {
-                    Console.WriteLine("До свидания!");
-                    break;
-                }
-                else if (choice == "all")
-                {
-                    Task_2_1();
-                    Task_2_2();
-                    Task_2_3();
-                    Task_2_4();
-                    Task_2_5();
-                    Task_2_6();
-                    Task_2_7();
-                    Task_2_8();
-                    Task_2_9();
-                    Task_2_10();
-                    Task_2_11();
-                    Task_2_12();
-                    Task_2_13();
-                    Task_2_14();
-                    Task_2_15();
-                    Task_2_16();
-                    Task_2_17();
-                }
-                else
-                {
-                    switch (choice)
-                    {
-                        case "2.1": Task_2_1(); break;
-                        case "2.2": Task_2_2(); break;
-                        case "2.3": Task_2_3(); break;
-                        case "2.4": Task_2_4(); break;
-                        case "2.5": Task_2_5(); break;
-                        case "2.6": Task_2_6(); break;
-                        case "2.7": Task_2_7(); break;
-                        case "2.8": Task_2_8(); break;
-                        case "2.9": Task_2_9(); break;
-                        case "2.10": Task_2_10(); break;
-                        case "2.11": Task_2_11(); break;
-                        case "2.12": Task_2_12(); break;
-                        case "2.13": Task_2_13(); break;
-                        case "2.14": Task_2_14(); break;
-                        case "2.15": Task_2_15(); break;
-                        case "2.16": Task_2_16(); break;
-                        case "2.17": Task_2_17(); break;
-                        default: Console.WriteLine("Неверный выбор! Попробуйте снова."); break;
-                    }
-                }
-            }
+            // а) y = 17x² – 6x + 13
+            Console.Write("Введите x для функции y = 17x² – 6x + 13: ");
+            double x = Convert.ToDouble(Console.ReadLine());
+            double y = 17 * Math.Pow(x, 2) - 6 * x + 13;
+            Console.WriteLine($"а) y = {y:F2}");
+            
+            // б) y = 3a² + 5a – 21
+            Console.Write("Введите a для функции y = 3a² + 5a – 21: ");
+            double a = Convert.ToDouble(Console.ReadLine());
+            y = 3 * Math.Pow(a, 2) + 5 * a - 21;
+            Console.WriteLine($"б) y = {y:F2}");
         }
