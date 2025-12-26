@@ -1,0 +1,11 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int num = int.Parse(Console.ReadLine());
+        Console.WriteLine($"Следующее число: {num + 1}");
+        Console.WriteLine($"Предыдущее число: {num - 1}");
+    }
+}
