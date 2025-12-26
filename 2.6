@@ -1,0 +1,11 @@
+ static void Task_2_6()
+        {
+            Console.WriteLine("\n=== Задание 2.6 ===");
+            const double R = 6350;  // радиус Земли в км
+            Console.Write("Введите высоту над Землей (в км): ");
+            double h = Convert.ToDouble(Console.ReadLine());
+            
+            // Формула: d = √(h(2R + h))
+            double d = Math.Sqrt(h * (2 * R + h));
+            Console.WriteLine($"Расстояние до горизонта: {d:F2} км");
+        }
