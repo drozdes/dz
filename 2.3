@@ -1,0 +1,26 @@
+static void Task_2_3()
+        {
+            Console.WriteLine("\n=== Задание 2.3 ===");
+            
+            // а) y = (a² + 1) / sqrt(a² + 1)
+            Console.Write("Введите a для функции y = (a² + 1) / √(a² + 1): ");
+            double a = Convert.ToDouble(Console.ReadLine());
+            double y = (Math.Pow(a, 2) + 1) / Math.Sqrt(Math.Pow(a, 2) + 1);
+            Console.WriteLine($"а) y = {y:F2}");
+            
+            // б) y = (x² - 2x + 1) / (x² + 2x + 1)
+            Console.Write("Введите x для функции y = (x² - 2x + 1) / (x² + 2x + 1): ");
+            double x = Convert.ToDouble(Console.ReadLine());
+            double numerator = Math.Pow(x, 2) - 2 * x + 1;
+            double denominator = Math.Pow(x, 2) + 2 * x + 1;
+            
+            if (Math.Abs(denominator) < 0.000001)
+            {
+                Console.WriteLine("б) Ошибка: деление на ноль!");
+            }
+            else
+            {
+                y = numerator / denominator;
+                Console.WriteLine($"б) y = {y:F2}");
+            }
+        }
