@@ -1,0 +1,10 @@
+ static void Task_2_7()
+        {
+            Console.WriteLine("\n=== Задание 2.7 ===");
+            Console.Write("Введите длину ребра куба: ");
+            double edge = Convert.ToDouble(Console.ReadLine());
+            double volume = Math.Pow(edge, 3);
+            double surfaceArea = 6 * Math.Pow(edge, 2);
+            Console.WriteLine($"Объем куба: {volume:F2}");
+            Console.WriteLine($"Площадь поверхности: {surfaceArea:F2}");
+        }
