@@ -1,0 +1,10 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string team = Console.ReadLine();
+        Console.WriteLine($"{team} – это чемпион!");
+    }
+}
