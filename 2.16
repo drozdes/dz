@@ -1,0 +1,12 @@
+ static void Task_2_16()
+        {
+            Console.WriteLine("\n=== Задание 2.16 ===");
+            Console.Write("Введите первый катет: ");
+            double cathetus1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Введите второй катет: ");
+            double cathetus2 = Convert.ToDouble(Console.ReadLine());
+            
+            double hypotenuse = Math.Sqrt(Math.Pow(cathetus1, 2) + Math.Pow(cathetus2, 2));
+            double perimeter = cathetus1 + cathetus2 + hypotenuse;
+            Console.WriteLine($"Периметр треугольника: {perimeter:F2}");
+        }
