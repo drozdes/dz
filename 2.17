@@ -1,0 +1,17 @@
+ static void Task_2_17()
+        {
+            Console.WriteLine("\n=== Задание 2.17 ===");
+            Console.Write("Введите первое основание трапеции: ");
+            double base1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Введите второе основание трапеции: ");
+            double base2 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Введите высоту трапеции: ");
+            double height = Convert.ToDouble(Console.ReadLine());
+            
+            // Для равнобедренной трапеции находим боковую сторону
+            double leg = Math.Sqrt(Math.Pow((base2 - base1) / 2, 2) + Math.Pow(height, 2));
+            double perimeter = base1 + base2 + 2 * leg;
+            Console.WriteLine($"Периметр трапеции: {perimeter:F2}");
+        }
+    }
+}
