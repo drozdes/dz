@@ -1,0 +1,10 @@
+  static void Task_2_8()
+        {
+            Console.WriteLine("\n=== Задание 2.8 ===");
+            Console.Write("Введите радиус окружности: ");
+            double radius = Convert.ToDouble(Console.ReadLine());
+            double circumference = 2 * Math.PI * radius;
+            double area = Math.PI * Math.Pow(radius, 2);
+            Console.WriteLine($"Длина окружности: {circumference:F2}");
+            Console.WriteLine($"Площадь круга: {area:F2}");
+        }
